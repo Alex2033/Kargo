@@ -87,3 +87,24 @@
         font-style: @font-style;
     }
 }
+
+.container() {
+    margin: 0 auto;
+    box-sizing: border-box;
+    @media (min-width: @xs) {
+        width: 100%;
+        padding: 0 15px;
+    }
+    @media (min-width: @sm) {
+        width: 750px;
+    }
+    @media (min-width: @md) {
+        width: 970px;
+    }
+    @media (min-width: @lg) {
+        width: 1170px;
+    }
+    @media (min-width: @xl) {
+        width: 1400px;
+    }
+}

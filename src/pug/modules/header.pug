@@ -6,14 +6,18 @@ header.header
 
                 // begin languages 
                 ul.languages
+                    li.languages__item.active
+                        a.languages__link(href="/")
+                            img(src="img/languages/rus.jpg", alt="Language image")
                     li.languages__item
                         a.languages__link(href="/")
+                            img(src="img/languages/ukr.jpg", alt="Language image")
                     li.languages__item
                         a.languages__link(href="/")
+                            img(src="img/languages/kaz.jpg", alt="Language image")
                     li.languages__item
                         a.languages__link(href="/")
-                    li.languages__item
-                        a.languages__link(href="/")
+                            img(src="img/languages/bel.jpg", alt="Language image")
                 // end languages 
 
                 // begin logo 
@@ -24,16 +28,17 @@ header.header
 
                 // begin account 
                 .account
-                    .account__img
-                        img(src="", alt="")
-                    .account__text
-                        | Личный кабинет
-                        img(src="", alt="")
-                    ul.account__dropdown
-                        li.account__dropdown-item
-                            a(href="/") Вход
-                        li.account__dropdown-item
-                            a(href="/") Регистрация
+                    .account__top
+                        .account__img
+                            img(src="img/account/user.png", alt="User")
+                        .account__text
+                            span Личный кабинет
+                            img(src="img/account/arrow-down.png", alt="Arrow down")
+                        ul.account__dropdown
+                            li.account__dropdown-item
+                                a(href="/") Вход
+                            li.account__dropdown-item
+                                a(href="/") Регистрация
                 // end account 
 
     .header__main
@@ -62,5 +67,22 @@ header.header
                             li.services__item
                     // end services 
                 // end service 
+
+                // begin navigation 
+                nav.navigation
+                    ul.navigation__list.site-list
+                        li.site-list__item
+                            a.site-list__link(href="/") Главная
+                        li.site-list__item
+                            a.site-list__link(href="/") О сервисе
+                        li.site-list__item
+                            a.site-list__link(href="/") Новости
+                        li.site-list__item
+                            a.site-list__link(href="/") Заказы от клиентов
+                        li.site-list__item
+                            a.site-list__link(href="/") Предоставить услугу
+                        li.site-list__item
+                            a.site-list__link(href="/") Получить услугу
+                // end navigation 
 
 // end header 

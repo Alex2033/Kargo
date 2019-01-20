@@ -1,0 +1,23 @@
+.header__container {
+    .container();
+}
+
+.header__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__top {
+    padding: 19px 0 16px;
+    border-bottom: 1px solid @main-color;
+
+    .header__row {
+        > * {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}

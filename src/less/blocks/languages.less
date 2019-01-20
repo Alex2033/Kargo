@@ -1,0 +1,37 @@
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.languages__item {
+    width: 37px;
+    height: 25px;
+    opacity: 0.4;
+    transition: opacity .14s ease;
+
+    &.active {
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.languages__link {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
